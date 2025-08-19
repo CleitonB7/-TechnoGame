@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoGame - Home</title>
+    <link rel="shortcut icon" href="imgs/icons8-combate-mortal-120.ico" type="image/x-icon">
+    <!-- Link do Bootstrap (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o seu CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Definir a imagem de fundo do banner */
+        .bg-custom {
+            background-image: url('https://media.discordapp.net/attachments/1216339602265211081/1341500178774884352/1068874.jpg?ex=67bad626&is=67b984a6&hm=b3e415220e287ed9c98dd18cba93a0b4435b47e7feda22b715f35580fce57d4b&=&format=webp&width=795&height=447'); /* Troque pela URL da sua imagem */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        /* Adicionar um efeito de sobreposição */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+            z-index: 1;
+        }
+
+        /* Definir a posição do conteúdo no meio da tela */
+        .content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            padding-top: 30vh; /* Ajuste a altura conforme necessário */
+        }
+
+        /* Estilo para os títulos de seções */
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+        <!-- Cabeçalho -->
+    <header>
+        <div class="logo">TechnoGame</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="analises.html">Análises</a></li>
+                <li><a href="guias.html">Guias</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner de Destaque com fundo responsivo -->
+    <section class="bg-custom">
+        
+        <div class="content">
+            <h1>Bem-vindo ao TechnoGame!</h1>
+            <p>Seu portal para as últimas notícias e análises sobre o mundo do Mortal Kombat.</p>
+        </div>
+    </section>
+
+    <!-- Modos do Mortal Kombat -->
+    <section class="destaques">
+        <h2>Modos do Mortal Kombat</h2>
+        <div class="game-cards">
+            <div class="card">
+                <img src="imgs/maxresdefault.jpg" alt="Motor Kombat">
+                <h3>Motor Kombat</h3>
+                <p>Um modo onde você pode dirigir veículos em combate e lutar de forma divertida!</p>
+                <a href="analises.html">Leia a análise</a>
+            </div>
+            <div class="card">
+                <img src="imgs/R (1).jpg" alt="Shaolin Monks">
+                <h3>Shaolin Monks</h3>
+                <p>Uma mistura de ação e aventura com os heróis clássicos de Mortal Kombat!</p>
+                <a href="analises.html">Leia a análise</a>
+            </div>
+            <div class="card">
+                <img src="imgs/maxresdefault (1).jpg" alt="Kombat Tower">
+                <h3>Kombat Tower</h3>
+                <p>Desafie-se a enfrentar uma série de oponentes e alcançar o topo!</p>
+                <a href="novidades.html">Veja as novidades</a>
+            </div>
+        </div>
+        <br>
+
+        <!-- Carrossel de Imagens -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/download (7).jpg" class="d-block w-100" alt="Jogo 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/download (4).jpg" class="d-block w-100" alt="Jogo 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/download (2).jpg" class="d-block w-100" alt="Jogo 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/download (3).jpg" class="d-block w-100" alt="Jogo 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/download (5).jpg" class="d-block w-100" alt="Jogo 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/download (6).jpg" class="d-block w-100" alt="Jogo 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/download (1).jpg" class="d-block w-100" alt="Jogo 7">
+                </div>
+            </div>
+
+            <!-- Controles do Carrossel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+<div class="historia">
+    <!-- História Base do Mortal Kombat -->
+    <section class="historia">
+        <h2>A História de Mortal Kombat</h2>
+        <p><strong>Mortal Kombat</strong> é uma das franquias de jogos de luta mais icônicas e influentes de todos os tempos, criada por Ed Boon e John Tobias. O primeiro jogo foi lançado em 1992 pela Midway Games. Mortal Kombat é conhecido por seus personagens únicos, jogabilidade inovadora e, claro, seus famosos "Fatalities" – movimentos especiais que permitem ao vencedor executar um golpe final espetacular em seu oponente.</p>
+
+        <p>A história de Mortal Kombat gira em torno de um torneio de luta entre guerreiros de diferentes reinos. O torneio é realizado a cada geração, e os campeões devem lutar para determinar o destino de seus mundos. Entre os principais personagens estão Liu Kang, Raiden, Scorpion, Sub-Zero e muitos outros, cada um com sua história, habilidades e motivações próprias.</p>
+
+        <p>O enredo se torna ainda mais complexo com a introdução de novos vilões e alianças entre heróis e inimigos ao longo das décadas. Mortal Kombat tornou-se um ícone da cultura pop, sendo adaptado para filmes, quadrinhos e até séries de TV, solidificando seu lugar no coração dos fãs de jogos de luta em todo o mundo.</p>
+    </section>
+</div>
+</body>
+    <!-- Rodapé -->
+    <footer>
+
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Seu JavaScript personalizado -->
+    <script src="script.js"></script>
+        <p>&copy; 2025 TechnoGame - Todos os direitos

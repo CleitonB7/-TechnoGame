@@ -1,0 +1,220 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #212121;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Seção Hero */
+.hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Cards de destaque */
+.destaques {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.destaques h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+.game-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #333;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #fff;
+    margin: 10px;
+}
+
+.card p {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.card a:hover {
+    color: #ff4081;
+}
+
+/* Formulário de Contato */
+.contato {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.contato h2 {
+    font-size: 2rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4081;
+}
+
+/* Rodapé */
+footer {
+    background-color: #212121;
+    padding: 20px;
+    text-align: center;
+    color: #bbb;
+}
+
+footer .social a {
+    color: #bbb;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    color: #00bcd4;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .game-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+.historia{
+    text-align: center;
+}

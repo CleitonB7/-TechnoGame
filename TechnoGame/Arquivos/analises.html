@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análises - TechnoGame</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        /* Estilo do background utilizando o Bootstrap */
+        .bg-custom {
+            background-image: url('https://images8.alphacoders.com/597/597959.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        /* Cor do texto das análises (branco) */
+        .analise-item p,
+        .analise-item .nota,
+        .analise-item .estrelas,
+        .analise-item .nome-analista {
+            color: white; /* Cor branca para o texto */
+        }
+
+        /* Estilo para as imagens de perfil do analista */
+        .img-perfil {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        /* Estilo para as imagens de perfil nas análises (comentários) */
+        .img-perfil-comentario {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        /* Para as seções de comentários */
+        .comentarios {
+            margin-top: 20px;
+        }
+
+        .comentario {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nome-analista {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        /* Estilo para o textarea e o botão de comentário */
+        .adicionar-comentario {
+            margin-top: 15px;
+        }
+
+        .adicionar-comentario textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            resize: none;
+        }
+
+        .adicionar-comentario button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .adicionar-comentario button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilo para o botão "Próxima Página" */
+        .proxima-pagina-btn {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+
+    <header>
+        <div class="logo">TechnoGame</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="analises.html">Análises</a></li>
+                <li><a href="guias.html">Guias</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="analises bg-custom">
+        <div class="container">
+            <!-- Análise Mortal Kombat 1 -->
+            <div class="analise-item">
+                <h3>Últimas análises</h3>
+                <div class="analista-comentario">
+                    <img src="imgs/perfil2.jpg" alt="João - Perfil" class="img-perfil-comentario">
+                    <span class="nome-analista">João</span>
+                </div>
+                <p>Após anos de espera, *Mortal Kombat 1* chegou para reviver a franquia com um sistema de combate renovado, novos personagens e uma história que explora um multiverso de possibilidades...</p>
+                <div class="avaliacao">
+                    <span class="nota">9.5/10</span>
+                    <span class="estrelas">★★★★★</span>
+                </div>
+            </div>
+
+            <div class="analise-item">
+                <div class="analista-comentario">
+                    <img src="imgs/perfil.jpg" alt="João - Perfil" class="img-perfil-comentario">
+                    <span class="nome-analista">Yago</span>
+                </div>
+                <p>this game is by far THE BEST MK game i have ever played very underrated collabed with some of my favorite horror franchises one of my favorite games and for a low price</p>
+                <div class="avaliacao">
+                    <span class="nota">9/10</span>
+                    <span class="estrelas">★★★★★</span>
+                </div>
+            </div>
+
+            <div class="analise-item">
+                <div class="analista-comentario">
+                    <img src="imgs/perfil3.jpg" alt="João - Perfil" class="img-perfil-comentario">
+                    <span class="nome-analista">Jonas</span>
+                </div>
+                <p>A campanha até que é legal, mas é curta e o modo online não é para quem joga apenas de forma casual.</p>
+                <div class="avaliacao">
+                    <span class="nota">4/10</span>
+                    <span class="estrelas">★★</span>
+                </div>
+            </div>
+
+            <div class="analise-item">
+                <div class="analista-comentario">
+                    <img src="imgs/perfil4.jpg" alt="João - Perfil" class="img-perfil-comentario">
+                    <span class="nome-analista">Gabriel</span>
+                </div>
+                <p>jogo raiz, combate ♥♥♥♥!</p>
+                <div class="avaliacao">
+                    <span class="nota">10/10</span>
+                    <span class="estrelas">★★★★★</span>
+                </div>
+            </div>
+
+            <div class="analise-item">
+                <div class="analista-comentario">
+                    <img src="imgs/perfil5.jpg" alt="João - Perfil" class="img-perfil-comentario">
+                    <span class="nome-analista">Samuel</span>
+                </div>
+                <p>Jogo excelente. Na minha opinião tem o combate mais rápido e fluido da franquia até o momento. Para quem quer um game com bastante personagem e por um preço em conta, vai de MK XL.</p>
+                <div class="avaliacao">
+                    <span class="nota">8/10</span>
+                    <span class="estrelas">★★★★</span>
+                </div>
+            </div>
+            
+            <!-- Botão "Próxima Página" -->
+            <div class="proxima-pagina-btn">
+                <a href="proxima-pagina.html" class="btn btn-primary">Próxima Página</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TechnoGame - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

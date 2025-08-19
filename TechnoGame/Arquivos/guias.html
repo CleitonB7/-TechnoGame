@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoGame - Guias</title>
+    <link rel="shortcut icon" href="imgs/icons8-combate-mortal-120.ico" type="image/x-icon">
+    <!-- Link do Bootstrap (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o seu CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Definir a imagem de fundo do banner */
+        .bg-custom {
+            background-image: url('https://images8.alphacoders.com/597/597959.jpg'); /* Troque pela URL da sua imagem */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Layout flexível para garantir que o rodapé fique no final */
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Cabeçalho do site */
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Seção de Guias */
+        .guias {
+            flex-grow: 1;  /* Esta seção vai crescer para preencher o espaço disponível */
+            padding: 40px 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        .guias h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .guia-item {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            text-align: center; /* Centraliza o texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Alinha os itens no centro */
+        }
+
+        /* Enquadramento das imagens nas dicas */
+        .guia-item img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border: 3px solid #007BFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Para título da dica */
+        .guia-item h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Para descrição da dica */
+        .guia-item p {
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto; /* Centraliza o texto */
+        }
+
+        /* Rodapé do site */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            margin-top: auto; /* Faz com que o footer se mova para baixo */
+        }
+    </style>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">TechnoGame</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="analises.html">Análises</a></li>
+                <li><a href="guias.html">Guias</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Guias -->
+    <section class="guias bg-custom">
+        <div class="container">
+            <h2>Guias e Dicas sobre Mortal Kombat</h2>
+
+            <!-- Guia 1 -->
+            <div class="guia-item">
+                <h3>Dica 1: Como dominar os combos no Mortal Kombat</h3>
+                <img src="imgs/comb.jpg" alt="Combos Mortal Kombat">
+                <p>Dominar os combos é uma das habilidades mais importantes no Mortal Kombat. Para ser bem-sucedido nas batalhas, você precisa aprender as sequências de botões e treinar até que se tornem naturais para você. Um bom combo pode virar o jogo a seu favor em segundos, e as combinações variam para cada personagem.</p>
+            </div>
+
+            <!-- Guia 2 -->
+            <div class="guia-item">
+                <h3>Dica 2: Como utilizar o modo Fatality</h3>
+                <img src="imgs/fatal.avif" alt="Fatality Mortal Kombat">
+                <p>Fatalities são finalizações icônicas que você pode realizar para derrotar seus oponentes de maneira épica. Para realizar um Fatality, é necessário memorizar a sequência exata de botões enquanto o oponente está no "finishing move" no final da luta. A prática é essencial, então dedique tempo para treinar os movimentos.</p>
+            </div>
+
+            <!-- Guia 3 -->
+            <div class="guia-item">
+                <h3>Dica 3: Conheça os golpes especiais de cada personagem</h3>
+                <img src="imgs/person.jpg" alt="Golpes Especiais Mortal Kombat">
+                <p>Cada personagem no Mortal Kombat tem golpes especiais únicos. Saber quando usar cada um desses golpes pode ser a chave para derrotar seu adversário. Experimente combinar golpes especiais com combos para criar ataques devastadores e surpreender seu oponente.</p>
+            </div>
+
+            <!-- Guia 4 -->
+            <div class="guia-item">
+                <h3>Dica 4: Estratégias para o modo multiplayer</h3>
+                <img src="imgs/mult.jpg" alt="Multiplayer Mortal Kombat">
+                <p>No modo multiplayer, a paciência e o controle emocional são cruciais. Muitos jogadores tentam aplicar estratégias de pressão, mas um bom jogador sabe quando esperar e contra-atacar no momento certo. Preste atenção nos padrões do adversário e seja imprevisível.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Seu JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
